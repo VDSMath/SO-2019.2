@@ -160,9 +160,11 @@ void OPT()
 int main(int argc, char *argv[])
 {
     pageAmount = atoi(argv[1]); //Recebe o numero de paginas dos argumentos de compilacao
+    if(pageAmount < 1 || pageAmount > MAXPAGES) //Um numero valido de paginas deve ser usado
+        return(1);
 
     n = 0; //Contador de entradas no arquivo .txt
-    while ((!feof(stdin)) && (n < MAXENTRIES) ) //Percorre o arquivo .txt usado de entrada ate o fim
+    while ((!feof(stdin)) && (n <= MAXENTRIES) ) //Percorre o arquivo .txt usado de entrada ate o fim ou ate chegar no numero maximo de entradas
     {
         scanf ("%d\n", &entries[n]) ; //Salva o inteiro lido no vetor de entradas
         n++;

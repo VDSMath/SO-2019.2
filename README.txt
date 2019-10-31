@@ -13,6 +13,7 @@ Para executar o programa:
 1) Coloque as referências de acesso às páginas no arquivo referencias.txt
 2) Execute o programa com o comando
 	simula-vm X < referencias.txt
-   Sendo X o número de quadros disponíveis.
+   Sendo X o número de quadros disponíveis. Para que o programa execute corretamente, X deve ser um 
+   número válido de acordo com a descrição do trabalho, maior que 0 e menor ou igual a 4096 (o maior exemplo dado).
 3) Será imprimido no console o resultado no formato pedido na descrição do projeto.
 
